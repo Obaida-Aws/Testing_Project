@@ -1,6 +1,6 @@
 describe('StudyNight App Navigation', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:1234/index.html'); // غير هذا ليناسب مسار تشغيل مشروعك
+    cy.visit('http://localhost:1234/index.html'); 
   });
 
   it('should display the header title', () => {
