@@ -6,7 +6,8 @@
     "gulp": "gulp",
     "test": "mocha",
     "lint": "eslint .",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "cypress": "cypress run"
   },
   "repository": {
     "type": "git",
