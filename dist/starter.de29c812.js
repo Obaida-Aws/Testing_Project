@@ -1135,7 +1135,7 @@ const renderAboutPage = ()=>{
     main.append(containerOuter);
 };
 
-},{"../images/aboutImage.png":"2Mk5X","./utilityRenderFunctions.js":"7Z6eA","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"2Mk5X":[function() {},{}],"aAmIa":[function(require,module,exports,__globalThis) {
+},{"./utilityRenderFunctions.js":"7Z6eA","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","../images/aboutImage.png":"2Mk5X"}],"2Mk5X":[function() {},{}],"aAmIa":[function(require,module,exports,__globalThis) {
 //DO NOT CHANGE ANYTHING IN THIS FILE//
 // This file is responsible for loading the home page
 //Imports image for homepage
@@ -1164,6 +1164,6 @@ const renderHomePage = ()=>{
     main.append(homeContainer);
 };
 
-},{"../images/homePage.png":"9QOwg","./utilityRenderFunctions.js":"7Z6eA","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"9QOwg":[function() {},{}]},["9mUY7","dkgmw"], "dkgmw", "parcelRequireccf0", {})
+},{"./utilityRenderFunctions.js":"7Z6eA","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","../images/homePage.png":"9QOwg"}],"9QOwg":[function() {},{}]},["9mUY7","dkgmw"], "dkgmw", "parcelRequireccf0", {})
 
 //# sourceMappingURL=starter.de29c812.js.map
