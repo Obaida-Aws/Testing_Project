@@ -4,7 +4,7 @@
   "description": "A flashcard tool for studying, optimized and tested using Mocha, Cypress, Parcel, and Gulp.",
   "scripts": {
     "gulp": "gulp",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
     "lint": "eslint .",
     "format": "prettier --write ."
   },
