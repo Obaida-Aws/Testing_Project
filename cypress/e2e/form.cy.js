@@ -24,17 +24,13 @@ describe('StudyNight Forms Test', () => {
     cy.get('[data-cy="card-set-link"]').click();
     cy.get('[data-cy="toggle_form"]').click();
 
-    
     cy.get('form[data-cy="set_form"]').should('not.have.class', 'notVisible');
     cy.get('form[data-cy="set_form"]').should('be.visible');
 
-    
     cy.get('form[data-cy="set_form"] input#titleInput').clear();
 
-    
     cy.get('form[data-cy="set_form"]').submit();
 
-    
     cy.contains('TITLE CANNOT BE EMPTY').should('be.visible');
   });
 });
