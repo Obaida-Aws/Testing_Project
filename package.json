@@ -4,6 +4,7 @@
   "description": "A flashcard tool for studying, optimized and tested using Mocha, Cypress, Parcel, and Gulp.",
   "scripts": {
     "gulp": "gulp",
+    "start": "gulp",
     "test": "mocha",
     "lint": "eslint .",
     "format": "prettier --write .",
