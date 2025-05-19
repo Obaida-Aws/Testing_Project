@@ -130,7 +130,7 @@
 
   // Only insert newRequire.load when it is actually used.
   // The code in this file is linted against ES5, so dynamic import is not allowed.
-  // INSERT_LOAD_HERE
+  function $parcel$resolve(url) {  url = importMap[url] || url;  return import.meta.resolve(distDir + url);}newRequire.resolve = $parcel$resolve;
 
   Object.defineProperty(newRequire, 'root', {
     get: function () {
@@ -243,10 +243,10 @@ function getHostname() {
 function getPort() {
     return HMR_PORT || (typeof location !== 'undefined' ? location.port : HMR_SERVER_PORT);
 }
- 
+// eslint-disable-next-line no-redeclare
 let WebSocket = globalThis.WebSocket;
 if (!WebSocket && typeof module.bundle.root === 'function') try {
-     
+    // eslint-disable-next-line no-global-assign
     WebSocket = module.bundle.root('ws');
 } catch  {
 // ignore.
@@ -258,7 +258,7 @@ var protocol = HMR_SECURE || typeof location !== 'undefined' && location.protoco
     '127.0.0.1',
     '0.0.0.0'
 ].includes(hostname) ? 'wss' : 'ws';
- 
+// eslint-disable-next-line no-redeclare
 var parent = module.bundle.parent;
 if (!parent || !parent.isParcelRequire) {
     // Web extension context
@@ -1104,10 +1104,9 @@ const submitSet = (e, setCards)=>{
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "renderAboutPage", ()=>renderAboutPage);
-var _aboutImagePng = require("../images/aboutImage.png");
-var _aboutImagePngDefault = parcelHelpers.interopDefault(_aboutImagePng);
 // This function creates a header element
 var _utilityRenderFunctionsJs = require("./utilityRenderFunctions.js");
+const aboutPageImage = new URL(require("227d3bb343a4fe7e")).href;
 const renderAboutPage = ()=>{
     // Clear the main content area
     const main = document.querySelector('main');
@@ -1126,7 +1125,7 @@ const renderAboutPage = ()=>{
     let text = "Whether you're studying at night or during the day, Study Night's flashcard application is designed to help you grow your skills in any subject. Whether you're preparing for an exam or learning a new language, Study Night makes it easy to create flashcard sets that are available anytime, anywhere.\n\nStudy Night was created by experienced educators and developers who are passionate about helping students achieve their goals and making learning more accessible.";
     const aboutP = (0, _utilityRenderFunctionsJs.createElement)('p', text);
     // Create and set up the image
-    const aboutImage = (0, _utilityRenderFunctionsJs.createImage)((0, _aboutImagePngDefault.default), 'Child Studying');
+    const aboutImage = (0, _utilityRenderFunctionsJs.createImage)(aboutPageImage, 'Child Studying');
     // Append the text elements to the text container
     textContainer.append(heading, subHeading, aboutP);
     // Append the text container and image to the outer container
@@ -1135,17 +1134,19 @@ const renderAboutPage = ()=>{
     main.append(containerOuter);
 };
 
-},{"./utilityRenderFunctions.js":"7Z6eA","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","../images/aboutImage.png":"2Mk5X"}],"2Mk5X":[function() {},{}],"aAmIa":[function(require,module,exports,__globalThis) {
+},{"./utilityRenderFunctions.js":"7Z6eA","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","227d3bb343a4fe7e":"d5xES"}],"d5xES":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("aboutImage.09237e89.png") + "?" + Date.now();
+
+},{}],"aAmIa":[function(require,module,exports,__globalThis) {
 //DO NOT CHANGE ANYTHING IN THIS FILE//
 // This file is responsible for loading the home page
 //Imports image for homepage
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "renderHomePage", ()=>renderHomePage);
-var _homePagePng = require("../images/homePage.png");
-var _homePagePngDefault = parcelHelpers.interopDefault(_homePagePng);
 //Helper functions
 var _utilityRenderFunctionsJs = require("./utilityRenderFunctions.js");
+const homePageImage = new URL(require("efb3482ccb9d6e24")).href;
 //Renders home page
 const renderHomePage = ()=>{
     //Gets main element
@@ -1156,7 +1157,7 @@ const renderHomePage = ()=>{
     //Creates subheader element
     const subHeading = (0, _utilityRenderFunctionsJs.createElement)('h2', 'A Digital Study Solution for the Modern World');
     //Creates elements
-    const image = (0, _utilityRenderFunctionsJs.createImage)((0, _homePagePngDefault.default), 'Desk of laptops');
+    const image = (0, _utilityRenderFunctionsJs.createImage)(homePageImage, 'Desk of laptops');
     //Container for elements
     const homeContainer = document.createElement('div');
     homeContainer.className = 'homeContainer';
@@ -1164,6 +1165,9 @@ const renderHomePage = ()=>{
     main.append(homeContainer);
 };
 
-},{"./utilityRenderFunctions.js":"7Z6eA","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","../images/homePage.png":"9QOwg"}],"9QOwg":[function() {},{}]},["9mUY7","dkgmw"], "dkgmw", "parcelRequireccf0", {})
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","./utilityRenderFunctions.js":"7Z6eA","efb3482ccb9d6e24":"3kqKv"}],"3kqKv":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("homePage.1a941f8e.png") + "?" + Date.now();
+
+},{}]},["9mUY7","dkgmw"], "dkgmw", "parcelRequireccf0", {}, "./", "/")
 
 //# sourceMappingURL=starter.de29c812.js.map
